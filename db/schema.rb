@@ -11,7 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140814201728) do
+ActiveRecord::Schema.define(version: 20140814201846) do
+
+  create_table "privacy", force: true do |t|
+    t.string "whocanseemystuff"
+    t.string "whocancontact"
+    t.string "whocanlookmeup"
+  end
 
   create_table "users", force: true do |t|
     t.string "firstname"

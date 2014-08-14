@@ -4,10 +4,8 @@ class CreateUsersTable < ActiveRecord::Migration
 	t.string :firstname
 	t.string :lastname
 	t.string :email
+	end
   end
 end
 
-def down
-drop_table :users
-end
-end
+
